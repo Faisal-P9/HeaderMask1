@@ -795,6 +795,15 @@
           ease: 'expo.out'
       })
 
+      .to('.about', {
+        scrollTrigger: {
+            trigger: ".about",
+            // snap: 0.5,
+            // scrub: 1
+        },
+        ease: 'expo.out'
+    })
+
 
       gsap.from(".displayAd__head", {
           x: '20%',
@@ -868,7 +877,7 @@
           start: "top center",
           // end: "top 30vh",
           // scrub: true,
-          toggleActions: "restart none none none",
+          toggleActions: "play none none none",
         }
       })
 
@@ -886,6 +895,34 @@
         opacity: 1
       })
 
+      gsap.from(".about__headImg", {
+        x: '-20%',
+        y: '15%',
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".about",
+          start: "top center",
+          // end: "top 30vh",
+          // scrub: true,
+          toggleActions: "play none none none",
+        },
+        
+      });
+
+      gsap.from(".about__head", {
+        x: '20%',
+        y: '15%',
+        stagger: 0.2,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".about",
+          start: "top center",
+          // end: "top 30vh",
+          // scrub: true,
+          toggleActions: "play none none none",
+        },
+        
+      });
 
 
       var screenWidth = window.innerWidth;
@@ -900,7 +937,7 @@
           start: "top center",
           // end: "top 30vh",
           // scrub: true,
-          toggleActions: "restart none none none",
+          toggleActions: "play none none none",
         }
       })
 
