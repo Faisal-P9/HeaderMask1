@@ -3094,9 +3094,9 @@ main {
       width: 120%;
       margin-left: 2%;
       object-fit: cover;
-      clip-path: inset(1px);
+      clip-path: inset(2px);
       outline: none;
-      border: 1px solid #fff; }
+      border: 2px solid #fff; }
       @media (max-width: 64.0625em) {
         .weboramaAd__bg--content {
           width: 90%;
